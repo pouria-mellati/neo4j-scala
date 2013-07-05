@@ -154,6 +154,8 @@ object Neo4jWrapper extends Neo4jWrapperImplicits {
     }
 
   private def _toCCPossible[T: Manifest](pc: PropertyContainer): Option[Class[_]] = {
+    if (pc == null)
+      return None
     for (cpn <- pc[String](ClassPropertyName); c = Class.forName(cpn) if (manifest[T].runtimeClass.isAssignableFrom(c)))
       return Some(c)
     None

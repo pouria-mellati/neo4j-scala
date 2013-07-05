@@ -137,4 +137,10 @@ class DeSerializingSpec extends SpecificationWithJUnit with Neo4jWrapper with Em
       success
     }
   }
+  
+  "Function Neo4jWrapper.toCC" should {
+    "return None when the parameter is null" in {
+      Neo4jWrapper.toCC(null) must beNone
+    }
+  }
 }
