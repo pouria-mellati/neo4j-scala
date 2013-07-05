@@ -3,10 +3,10 @@ import sbt.Keys._
 
 object Neo4jScalaBuild extends Build {
   
-  val neo4jVersion = "1.9.M04"
+  val neo4jVersion = "1.9.1"
   val neo4jShellVersion = neo4jVersion
   val neo4jCypherVersion = neo4jVersion
-  val neo4jRestVersion = neo4jVersion
+  val neo4jRestVersion = "1.9.M04"
 
   lazy val neo4jScala = Project(
     id = "neo4j-scala",

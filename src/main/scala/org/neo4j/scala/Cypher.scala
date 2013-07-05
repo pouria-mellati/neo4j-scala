@@ -49,6 +49,10 @@ class TypedExecutionResultImpl(val er: ExecutionResult) extends TypedExecutionRe
   def dumpToString = er.dumpToString
 
   def queryStatistics = er.queryStatistics
+  
+  def executionPlanDescription = er.executionPlanDescription
+  
+  def close = er.close
 
   /**
    * maps a given column that has to be a property container
