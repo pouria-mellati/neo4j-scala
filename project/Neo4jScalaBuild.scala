@@ -6,7 +6,6 @@ object Neo4jScalaBuild extends Build {
   val neo4jVersion = "1.9.1"
   val neo4jShellVersion = neo4jVersion
   val neo4jCypherVersion = neo4jVersion
-  val neo4jRestVersion = "1.9.M04"
 
   lazy val neo4jScala = Project(
     id = "neo4j-scala",
@@ -24,7 +23,6 @@ object Neo4jScalaBuild extends Build {
     		  					 "org.neo4j" % "neo4j-kernel" % neo4jVersion,
     		  					 "org.neo4j" % "neo4j-lucene-index" % neo4jVersion,
     		  					 "org.neo4j" % "neo4j-shell" % neo4jShellVersion,
-    		  					 "org.neo4j" % "neo4j-rest-graphdb" % neo4jRestVersion,
     		  					 "org.neo4j" % "neo4j-cypher" % neo4jCypherVersion,
     		  					 "org.scala-lang" % "scala-compiler" % "2.10.0")
     )
