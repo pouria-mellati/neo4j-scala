@@ -3,7 +3,7 @@ import sbt.Keys._
 
 object Neo4jScalaBuild extends Build {
   
-  val neo4jVersion = "1.9.1"
+  val neo4jVersion = "1.9.3"
   val neo4jShellVersion = neo4jVersion
   val neo4jCypherVersion = neo4jVersion
 
@@ -14,7 +14,7 @@ object Neo4jScalaBuild extends Build {
       name := "Neo4j Scala",
       organization := "org.neo4j",
       version := "0.2.0-M2-SBT-SNAPSHOT",
-      scalaVersion := "2.10.0",
+      scalaVersion := "2.10.2",
       resolvers += "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases",
       resolvers += "Neo4j Public Repository" at "http://m2.neo4j.org",
       libraryDependencies ++= Seq("junit" % "junit" % "4.7",
